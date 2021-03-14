@@ -1,0 +1,95 @@
+<html lang="es">
+    <head>
+        
+
+    </head>
+    <style>
+        h1,p{
+            color:black;
+            background-color: white;
+            width: fit-content;
+            display: inline;
+            line-height: 1.7;
+        }
+        body{
+            font-family: Helvetica;
+            text-align: center;
+            background-attachment: fixed;
+            background-image: url("https://img.freepik.com/vector-gratis/fondo-pantalla-eventos-deportivos-cancelados_23-2148584718.jpg?size=626&ext=jpg");
+            opacity: 0.9;
+            text-decoration: solid;
+        }
+        label{
+            display: block;
+            font-size: 22px;
+            padding-bottom:10px ;
+        }
+        input{
+            display:inline-block;
+            transform:scale(1.15);
+        }
+        form{
+            color: black;
+            background-color: darkgray;
+            font-style:oblique;
+            margin-left:120px;
+            margin-right:120px;
+        }
+        h1{
+            font-size: 38px;
+        }
+        textarea{
+            padding-right: 266px;
+            padding-bottom: 20px;
+        }
+        #submit{
+            transform: scale(1.4);
+            padding: 10px;
+            background-color:limegreen;
+            color:antiquewhite;
+        }
+        
+    </style>
+    <body>
+        <h1 id="title">Encuesta sobre deportes</h1>
+        <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <p id="description">Esta encuesta es para conocer sobre los gustos de las personas en
+            los deportes
+        </p>
+        <form id="survey-form">
+                <label id="name-label">Name:</label>
+                <input type="text" name="name" id="name" required placeholder="Escribe tu nombre porfavor"><br><hr>
+            <label id="email-label">Email:</label>
+                <input type="email" name="email" id="email" required placeholder="Escribe tu email porfavor"><br><hr>
+            <label id="number-label">Number:</label>
+                <input type="number" name="number" id="number" min="0" max="10" required placeholder="Escribe tu numero porfavor"><br><hr>
+            
+
+            <label for="sport">Choose a sport:</label>
+
+            <select name="dropdown" id="dropdown">
+              <option value="futbol">Futbol</option>
+               <option value="tenis">Tenis</option>
+              <option value="beisbol">Beisbol</option>
+              <option value="basquet">Basquet</option>
+            </select>
+            <br><hr>
+            <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male"><br>
+            <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female"><br>
+            <label for="other">Other</label>    
+            <input type="radio" id="other" name="gender" value="other"><br><hr>
+                
+            <label for="deporte1"> Tengo una pelota de futbol</label>
+                <input type="checkbox" id="pelota-futbol" name="pelota-futbol" value="futbol"><br>
+            <label for="deporte2"> Tengo una pelota de tenis</label>
+                <input type="checkbox" id="pelota-tenis" name="pelota-tenis" value="tenis"><br>
+            <label for="deporte3"> Tengo una pelota de beisbol</label>    
+                <input type="checkbox" id="pelota-beisbol" name="pelota-beisbol" value="beisbol"><br><hr>
+                 
+                <textarea placeholder="Comentarios adicionales"></textarea><br><br>
+                <input type="submit" id="submit"><br><br>
+        </form>
+    </body>
+</html>
